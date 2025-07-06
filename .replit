@@ -1,3 +1,4 @@
+
 modules = ["nodejs-20", "web"]
 
 [nix]
@@ -12,7 +13,7 @@ runButton = "Development Server"
 
 [[workflows.workflow]]
 name = "Development Server"
-author = 44503392
+author = "replit"
 mode = "sequential"
 
 [[workflows.workflow.tasks]]
@@ -22,3 +23,48 @@ args = "npm run dev"
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[env]
+NODE_ENV = "development"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[languages]
+
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs}"
+
+[languages.javascript.languageServer]
+start = "typescript-language-server --stdio"
+
+[packager]
+language = "nodejs"
+
+[packager.features]
+enabledForHosting = false
+packageSearch = true
+guessImports = true
+
+[debugger]
+support = true
+
+[debugger.interactive]
+transport = "localhost:0"
+startCommand = ["dap-node"]
+
+[debugger.interactive.initializeMessage]
+command = "initialize"
+type = "request"
+
+[debugger.interactive.launchMessage]
+command = "launch"
+type = "request"
+
+[debugger.interactive.launchMessage.arguments]
+program = "./app/page.tsx"
+console = "externalTerminal"
+args = []
+stopOnEntry = false
+sourceMaps = true
+outDir = ".next"
