@@ -6,5 +6,7 @@
     pkgs.nodePackages.npm
     pkgs.nodePackages.pnpm
     pkgs.git
+    pkgs.curl
+    pkgs.wget
   ];
 }

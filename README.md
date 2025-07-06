@@ -1,30 +1,97 @@
-# Afls website design
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+# AFLS Website Design - موقع الشركة الإماراتية للحلول الحرجية
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mefim50228-cxnlabcoms-projects/v0-afls-website-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/MpGJS58afMr)
+موقع ويب احترافي للشركة الإماراتية للحلول الحرجية (AFLS) مبني باستخدام Next.js و Tailwind CSS.
 
-## Overview
+## 🚀 التشغيل السريع في Replit
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+1. **اضغط على زر "Run"** لتشغيل الموقع
+2. الموقع سيعمل على المنفذ 3000
+3. ستحصل على رابط مباشر للموقع في تبويب منفصل
 
-## Deployment
+## 📋 المتطلبات
 
-Your project is live at:
+- Node.js 20+
+- npm أو pnpm
+- Next.js 15+
 
-**[https://vercel.com/mefim50228-cxnlabcoms-projects/v0-afls-website-design](https://vercel.com/mefim50228-cxnlabcoms-projects/v0-afls-website-design)**
+## 🛠️ الأوامر المتاحة
 
-## Build your app
+```bash
+# تشغيل الموقع في وضع التطوير
+npm run dev
 
-Continue building your app on:
+# بناء الموقع للإنتاج
+npm run build
 
-**[https://v0.dev/chat/projects/MpGJS58afMr](https://v0.dev/chat/projects/MpGJS58afMr)**
+# تشغيل الموقع في وضع الإنتاج
+npm start
 
-## How It Works
+# تثبيت التبعيات
+npm install
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+# فحص الأكواد
+npm run lint
+```
+
+## 📁 هيكل المشروع
+
+```
+├── app/                 # صفحات الموقع (App Router)
+│   ├── page.tsx        # الصفحة الرئيسية
+│   ├── about/          # صفحة عنا
+│   ├── services/       # صفحة الخدمات
+│   ├── projects/       # صفحة المشاريع
+│   ├── careers/        # صفحة الوظائف
+│   └── contact/        # صفحة التواصل
+├── components/         # المكونات القابلة لإعادة الاستخدام
+├── lib/               # المكتبات والأدوات المساعدة
+├── public/            # الملفات العامة والصور
+└── styles/            # ملفات التنسيق
+```
+
+## 🎨 التقنيات المستخدمة
+
+- **Next.js 15** - إطار العمل الرئيسي
+- **React 19** - مكتبة واجهة المستخدم
+- **TypeScript** - للكتابة الآمنة
+- **Tailwind CSS** - للتنسيق
+- **shadcn/ui** - مكونات واجهة المستخدم
+- **Lucide React** - الأيقونات
+
+## 🌐 النشر
+
+الموقع مُهيأ للنشر على:
+- ✅ Replit Deployments (مُوصى به)
+- ✅ Vercel
+- ✅ Netlify
+- ✅ أي منصة تدعم Next.js
+
+## 📱 الصفحات المتاحة
+
+- **الرئيسية** (`/`) - صفحة ترحيب مع نظرة عامة
+- **عنا** (`/about`) - معلومات عن الشركة
+- **الخدمات** (`/services`) - خدمات الشركة
+- **المشاريع** (`/projects`) - أعمال الشركة
+- **الوظائف** (`/careers`) - الفرص الوظيفية
+- **التواصل** (`/contact`) - معلومات التواصل
+
+## 🔧 التطوير
+
+هذا المشروع مُحسن للعمل مع **Replit Agent**. يمكنك:
+
+1. استخدام الـ Agent لإضافة ميزات جديدة
+2. تعديل التصميم والمحتوى
+3. إضافة صفحات جديدة
+4. تحسين الأداء والوظائف
+
+## 📞 الدعم
+
+إذا واجهت أي مشاكل، يمكنك:
+- استخدام Replit Agent للمساعدة
+- مراجعة documentation في `/docs`
+- التحقق من console للأخطاء
+
+---
+
+**تم التطوير باستخدام ❤️ في Replit**
